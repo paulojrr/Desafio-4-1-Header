@@ -1,16 +1,13 @@
 const express = require('express')
 const routes = express.Router()
 
+
 routes.get('/', (req, res) => {
-    res.redirect('/instructors')
+    res.render('teachers/index')
 })
 
-routes.get('/instructors', (req, res) => {
-    res.render('instructors/index')
-})
-
-routes.get('/members', (req, res) => {
-    res.send('members')
+routes.get('/students', (req, res) => {
+    res.send('students')
 })
 
 module.exports = routes
