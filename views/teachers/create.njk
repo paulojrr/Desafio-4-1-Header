@@ -1,0 +1,59 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+    <form class="card" method="POST" action="/teachers">
+        <section class="card__image" style="background: url(https://source.unsplash.com/collection/517198/900x900) no-repeat center center /cover"></section>
+
+        <section class="card__details">
+            <h3>Detalhes</h3>
+
+            <div class="card__item">
+                <div class="item">
+                    <div>Avatar URL</div>
+                    <div>
+                        <input type="url" name="avatar_url" id="avatar_url" placeholder="Digite a URL">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Nome completo</div>
+                    <div><input type="text" name="name" id="name" placeholder="Digite seu nome completo"></div>
+                </div>
+                <div class="item">
+                    <div>Data de nascimento</div>
+                    <div><input type="date" name="birth" id="birth"></div>
+                </div>
+                <div class="item">
+                    <div>Grau de escolaridade</div>
+                    <div>
+                        <select name="education" id="education">
+                            <option value="high_school">Ensino Médio Completo</option>
+                            <option value="higher_education">Ensino Superior Completo</option>
+                            <option value="master" selected="selected">Mestrado</option>
+                            <option value="doctorate">Doutorado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Tipo da aula</div>
+                    <div>
+                        <input type="radio" name="class_type" id="presential" value="presential" checked>
+                        <label for="presential">Presencial</label>
+
+                        <input type="radio" name="class_type" id="distance" value="distance">
+                        <label for="distance">Á distância</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Área de atuação</div>
+                    <div>
+                        <input type="text" name="occupation" id="occupation" placeholder="Digite as áres separadas por ponto e virgula">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Salvar</button>
+                </div>
+            </div>
+        </section>
+    </form>
+{% endblock content %}
