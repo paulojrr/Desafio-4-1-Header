@@ -66,11 +66,12 @@ header {
 
 .card {
     width: 800px;
-    height: 450px;
+    height: auto;
     background-color: white;
     margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 3%;
 
     /* Animation */
     animation: up 700ms ease-out;
@@ -151,16 +152,26 @@ input[type=radio] {
     width: initial;
 }
 
-button[type=submit] {
+button[type=submit], a.button {
     width: 100%;
     background-color: var(--secondary--color);
     height: 30px;
     font-weight: bold;
+    color: #000
 }
 
 button[type=submit]:hover {
     outline: 3px solid var(--secondary--color);
 }
+
+a.button {
+    text-decoration: none;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 input::placeholder {
     font-weight: bold;

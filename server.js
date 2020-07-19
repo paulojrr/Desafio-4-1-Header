@@ -4,7 +4,7 @@ const routes = require('./routes')
 
 const server = express()
 
-server.use(express.urlencoded({extends : true}))
+server.use(express.urlencoded({ extended : true }))
 server.use(express.static('public'))
 server.use(routes)
 
@@ -17,7 +17,7 @@ nunjucks.configure('views', {
     watch: true
 })
 
-server.listen(3000, (req, res) => {
-    console.log('Server running at port 3000')
+server.listen(5000, (req, res) => {
+    console.log('Server running at port 5000')
 })
 

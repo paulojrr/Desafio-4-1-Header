@@ -1,10 +1,33 @@
 {
-  "instructors": [
+  "teachers": [
     {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "created_at": 1595129817284,
       "name": "Paulo Sergio de Almeida Junior",
-      "birth": "1994-03-07",
+      "birth": 762998400000,
+      "education": "higher_education",
+      "class_type": "A Distância",
+      "occupation": "TI, inglês"
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "created_at": 1595130087237,
+      "name": "Tatiane Souza Ferreira",
+      "birth": 615945600000,
+      "education": "doctorate",
+      "class_type": "A Distância",
+      "occupation": "Administração, RH"
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://google.com",
+      "created_at": 1595130320454,
+      "name": "Paulo Sergio de Almeida Junior",
+      "birth": 762998400000,
       "education": "master",
-      "class_type": "presential",
+      "class_type": "Presencial",
       "occupation": "TI, inglês"
     }
   ]
