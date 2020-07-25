@@ -181,10 +181,69 @@ a.button {
     margin-top: 10px;
 }
 
-
-
-
 input::placeholder {
     font-weight: bold;
     font-size: 12px;
+}
+
+table {
+    border-spacing: 0;
+    padding: 20px;
+}
+
+.table-index {
+    display: block;
+    padding: 40px;
+}
+
+.table-index thead tr th {
+    text-align: left;
+}
+
+td, th {
+    padding: 16px 16px 16px 0;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: bold;
+    
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #777;
+}
+
+.table-index tbody tr td:first-child span{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover
+}
+
+.table-index tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td span {
+    border-radius: 50%;
+}
+
+.action_button {
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid var(--primary--color);
+    background-color: var(--primary--color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.action_button:hover {
+    border: 3px solid var(--primary--color);
 }
